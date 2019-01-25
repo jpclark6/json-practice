@@ -1,3 +1,5 @@
+require 'date'
+
 class Story
   attr_reader :section, :subsection, :title, :abstract, :link, :published, :photo
 
@@ -19,7 +21,7 @@ class Story
       title = result["title"]
       abstract = result["abstract"]
       link = result["url"]
-      published = result["published_date"]
+      published = parse_date(result["published_date"])
       photo = get_photo(result["multimedia"])
       params = {
         section: section,
@@ -42,6 +44,10 @@ class Story
       end
     end
     "No photo available"
+  end
+
+  def self.parse_date(date)
+    Date.parse(date).strftime('%B %d, %Y')
   end
 end
 

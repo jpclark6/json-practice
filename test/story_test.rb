@@ -47,7 +47,7 @@ class StoryTest < Minitest::Test
     expected_title = "How a Lawyer, a Felon and a Russian General Chased a Moscow Trump Tower Deal"
     expected_abstract = "During the presidential campaign, Michael D. Cohen and Felix Sater, an associate with a criminal past, pursued a new Trump Tower project with a former spymaster’s help."
     expected_link = "https://www.nytimes.com/2018/11/29/us/politics/trump-russia-felix-sater-michael-cohen.html"
-    expected_published = "2018-11-29T18:46:27-05:00"
+    expected_published = "November 29, 2018"
     expected_photo = "https://static01.nyt.com/images/2018/11/30/world/30trumpmoscow-1-print/30trumpmoscow7-articleInline.jpg"
 
     assert_equal expected_section, story.section
@@ -65,7 +65,7 @@ class StoryTest < Minitest::Test
     expected_title = "To Treat Eating Disorders, It Sometimes Takes Two"
     expected_abstract = "Romantic partners of someone with an eating disorder often want to help, but simply don’t know how."
     expected_link = "https://www.nytimes.com/2018/11/29/well/eat/eating-disorders-food-anorexia-bulimia-binge-partners-spouses-treatment.html"
-    expected_published = "2018-11-29T05:02:04-05:00"
+    expected_published = "November 29, 2018"
     expected_photo = "https://static01.nyt.com/images/2018/10/26/well/00WELL-EATINGPARTNERS1/00WELL-EATINGPARTNERS1-articleInline.jpg"
 
     assert_equal expected_section, story_2.section
